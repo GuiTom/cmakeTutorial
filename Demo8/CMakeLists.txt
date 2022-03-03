@@ -1,13 +1,10 @@
 cmake_minimum_required (VERSION 2.8)
 
-
 # 项目信息
-project (Demo6)
+project (Demo8)
 set (Demo_VERSION_MAJOR 1)
 set (Demo_VERSION_MINOR 0)
 
-
-message(CMAKE_ROOT${CMAKE_ROOT})
 set (CMAKE_INCLUDE_CURRENT_DIR ON)
 
 # 检查系统是否支持 pow 函数
@@ -23,7 +20,7 @@ configure_file (
 # 是否加入 MathFunctions 库
 if (NOT HAVE_POW)
   include_directories ("${PROJECT_SOURCE_DIR}/math")
-  add_subdirectory (math)
+  add_subdirectory (math)  
   set (EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
 endif (NOT HAVE_POW)
 
@@ -62,3 +59,11 @@ endmacro (do_test)
 do_test (5 2 "is 25")
 do_test (10 5 "is 100000")
 do_test (2 10 "is 1024")
+
+# 构建一个 CPack 安装包
+include (InstallRequiredSystemLibraries)
+set (CPACK_RESOURCE_FILE_LICENSE
+  "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
+set (CPACK_PACKAGE_VERSION_MAJOR "${Demo_VERSION_MAJOR}")
+set (CPACK_PACKAGE_VERSION_MINOR "${Demo_VERSION_MINOR}")
+include (CPack)

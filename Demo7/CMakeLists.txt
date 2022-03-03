@@ -1,12 +1,7 @@
 cmake_minimum_required (VERSION 2.8)
 
-
 # 项目信息
 project (Demo6)
-set (Demo_VERSION_MAJOR 1)
-set (Demo_VERSION_MINOR 0)
-
-
 message(CMAKE_ROOT${CMAKE_ROOT})
 set (CMAKE_INCLUDE_CURRENT_DIR ON)
 
