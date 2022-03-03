@@ -95,7 +95,7 @@ math/clean: math/CMakeFiles/MathFunctions.dir/clean
 # Target rules for target CMakeFiles/Demo.dir
 
 # All Build rule for target.
-CMakeFiles/Demo.dir/all:
+CMakeFiles/Demo.dir/all: math/CMakeFiles/MathFunctions.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chenchao/Desktop/learnCmake/Demo3/build/CMakeFiles --progress-num=1,2 "Built target Demo"
@@ -103,7 +103,7 @@ CMakeFiles/Demo.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chenchao/Desktop/learnCmake/Demo3/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chenchao/Desktop/learnCmake/Demo3/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chenchao/Desktop/learnCmake/Demo3/build/CMakeFiles 0
 .PHONY : CMakeFiles/Demo.dir/rule

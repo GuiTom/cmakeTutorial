@@ -1,0 +1,6 @@
+/Users/chenchao/Desktop/learnCmake/Demo4/build/CMakeFiles/rebuild_cache.dir
+/Users/chenchao/Desktop/learnCmake/Demo4/build/CMakeFiles/edit_cache.dir
+/Users/chenchao/Desktop/learnCmake/Demo4/build/CMakeFiles/Demo.dir
+/Users/chenchao/Desktop/learnCmake/Demo4/build/math/CMakeFiles/rebuild_cache.dir
+/Users/chenchao/Desktop/learnCmake/Demo4/build/math/CMakeFiles/edit_cache.dir
+/Users/chenchao/Desktop/learnCmake/Demo4/build/math/CMakeFiles/MathFunctions.dir
